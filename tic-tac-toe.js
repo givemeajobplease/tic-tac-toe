@@ -70,6 +70,7 @@ function toptwo(){
 function topthree(){
  var canvas = document.getElementById("game-board")
  if (topthreeclick == "false") {
+ if (turn == "player1")
  var topthreeO = document.createElementNS(namespace, "circle")
  topthreeO.setAttribute("cx", "223")
  topthreeO.setAttribute("cy", "50")
@@ -78,6 +79,80 @@ function topthree(){
  topthreeO.setAttribute("stroke-width", "10")
  topthreeO.setAttribute("stroke", "blue")
  canvas.appendChild(topthreeO)
- topthreeclick = "true"
+ turn = "player2"
+  } else if (turn == "player2"){
+    var topthreeX = document.createElementNS(namespace, "rect")
+    topthreeX.setAttribute("x", "110")
+    topthreeX.setAttribute("y", "25")
+    topthreeX.setAttribute("width", "50")
+    topthreeX.setAttribute("height", "50")
+    topthreeX.setAttribute("fill", "white")
+    topthreeX.setAttribute("stroke-width", "10")
+    topthreeX.setAttribute("stroke", "red")
+    canvas.appendChild(topthreeX)
+    turn = "player1"
   }
- }
+  topthreeclick = "true"
+}
+
+var middleoneclick = "false"
+function middleone(){
+var canvas = document.getElementById("game-board")
+if (middleoneclick == "false") {
+if (turn == "player1") {
+var middleoneO = document.createElementNS(namespace, "circle")
+middleoneO.setAttribute("cx", "47")
+middleoneO.setAttribute("cy", "140")
+middleoneO.setAttribute("r", "25")
+middleoneO.setAttribute("fill", "white")
+middleoneO.setAttribute("stroke-width", "10")
+middleoneO.setAttribute("stroke", "blue")
+canvas.appendChild(middleoneO)
+turn = "player2"
+}
+else if (turn == "player2"){
+  var middleoneX = document.createElementNS(namespace, "rect")
+  middleoneX.setAttribute("x", "22")
+  middleoneX.setAttribute("y", "100")
+  middleoneX.setAttribute("width", "50")
+  middleoneX.setAttribute("height", "50")
+  middleoneX.setAttribute("fill", "white")
+  middleoneX.setAttribute("stroke-width", "10")
+  middleoneX.setAttribute("stroke", "red")
+  canvas.appendChild(middleoneX)
+  turn = "player1"
+}
+middleoneclick = "true"
+}
+}
+
+var middletwoclick = "false"
+function middletwo(){
+var canvas = document.getElementById("game-board")
+if (middleoneclick == "false") {
+if (turn == "player1") {
+var middleoneO = document.createElementNS(namespace, "circle")
+middleoneO.setAttribute("cx", "47")
+middleoneO.setAttribute("cy", "140")
+middleoneO.setAttribute("r", "25")
+middleoneO.setAttribute("fill", "white")
+middleoneO.setAttribute("stroke-width", "10")
+middleoneO.setAttribute("stroke", "blue")
+canvas.appendChild(middleoneO)
+turn = "player2"
+}
+else if (turn == "player2"){
+  var middleoneX = document.createElementNS(namespace, "rect")
+  middleoneX.setAttribute("x", "22")
+  middleoneX.setAttribute("y", "100")
+  middleoneX.setAttribute("width", "50")
+  middleoneX.setAttribute("height", "50")
+  middleoneX.setAttribute("fill", "white")
+  middleoneX.setAttribute("stroke-width", "10")
+  middleoneX.setAttribute("stroke", "red")
+  canvas.appendChild(middleoneX)
+  turn = "player1"
+}
+middleoneclick = "true"
+}
+}

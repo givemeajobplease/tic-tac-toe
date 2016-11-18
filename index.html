@@ -5,20 +5,23 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <svg id="game-board" width="80%" viewBox="0 0 300 300">
+    <svg id="game-board" width="80%" viewBox="0 0 274 290">
       <!-- Create all the shapes for your game board here! -->
 <rect x="5" y="5" width="90" height="90" fill="white" stroke="black" stroke-width="4" onclick="topone()"/>
 <rect x="90" y="5" width="90" height="90" fill="white" stroke="black" stroke-width="4" onclick="toptwo()"/>
-<rect x="180" y="5" width="90" height="90" fill="white" stroke="black" stroke-width="4" onclick="topthree()""/>
-<rect x="5" y="95" width="90" height="90" fill="white" stroke="black" stroke-width="4"/>
-<rect x="90" y="95" width="90" height="90" fill="white" stroke="black" stroke-width="4"/>
-<rect x="180" y="95" width="90" height="90" fill="white" stroke="black" stroke-width="4"/>
-<rect x="5" y="185" width="90" height="90" fill="white" stroke="black" stroke-width="4"/>
-<rect x="90" y="185" width="90" height="90" fill="white" stroke="black" stroke-width="4"/>
-<rect x="180" y="185" width="90" height="90" fill="white" stroke="black" stroke-width="4"/>
+<rect x="180" y="5" width="90" height="90" fill="white" stroke="black" stroke-width="4" onclick="topthree()"/>
+<rect x="5" y="95" width="90" height="90" fill="white" stroke="black" stroke-width="4" onclick="middleone()" />
+<rect x="90" y="95" width="90" height="90" fill="white" stroke="black" stroke-width="4" onclick="middletwo()"/>
+<rect x="180" y="95" width="90" height="90" fill="white" stroke="black" stroke-width="4" onclick="middlethree()"/>
+<rect x="5" y="185" width="90" height="90" fill="white" stroke="black" stroke-width="4" onclick="bottomone()"/>
+<rect x="90" y="185" width="90" height="90" fill="white" stroke="black" stroke-width="4" onclick="bottomtwo()"/>
+<rect x="180" y="185" width="90" height="90" fill="white" stroke="black" stroke-width="4" onclick="bottomthree()"/>
     </svg>
 
     <!-- This line of code points to your JavaScript file. No need to touch it. -->
     <script src="tic-tac-toe.js"></script>
+    <div id="buttonone">
+    <button type="button" onclick="resetboard()">RESET BOARD</button>
+  </div>
   </body>
 </html>
