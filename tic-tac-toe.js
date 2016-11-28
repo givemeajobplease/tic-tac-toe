@@ -412,5 +412,15 @@ bottomthreeclick = "true"
 }
 }
 function resetboard(){
-  location.reload();
+  document.getElementById("paragraph2")
+  paragraph2.setAttribute("style", "display: none;")
+
+  document.getElementById("paragraph1")
+  paragraph1.setAttribute("style", "display: none;")
+//weeeeeeeeeeeeeeeeeeeed
+  document.getElementById("gameover")
+  gameover.setAttribute("style", "display: block;")
+
+  setTimeout(function () {location.reload()}, 2000);
+
 }
