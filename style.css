@@ -1,4 +1,6 @@
 /* Write all your CSS style code in this file! */
+@import url('https://fonts.googleapis.com/css?family=Coming+Soon|Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
 body {
   background-color: lightpink;
 }
@@ -8,4 +10,20 @@ body {
 svg{
   display: block;
   margin: auto;
+}
+#paragraph1{
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  display: block;
+}
+
+#paragraph2{
+  text-align: center;
+  font-family: 'Coming Soon', cursive;
+  display: none;
+}
+#gameover{
+  display: none;
+  text-align: center;
+  font-family: 'Rock Salt', cursive;
 }
